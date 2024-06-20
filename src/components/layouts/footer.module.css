@@ -1,0 +1,33 @@
+.footer{
+    height:60vh;
+    background-color: rgb(192, 198, 205);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2fr;
+}
+.footComp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.3rem;
+
+}
+.icon{
+    height:2rem;
+    width:auto
+}
+.list{
+    /* display: inline;
+     */
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     
+}
+.li{
+    margin: 0 10px;
+}
+.li:hover{
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}

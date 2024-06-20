@@ -1,0 +1,15 @@
+.outdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:80vh;
+    font-size: large;
+}
+.fof{
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.space{
+    margin:10px
+}

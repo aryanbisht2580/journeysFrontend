@@ -1,0 +1,39 @@
+.imageHeight {
+    height: 60px;
+}
+@media only screen and (max-width: 1200px) {
+    .imageHeight {
+        height: 40px;
+    }
+    .nav-link{
+        padding:2px
+    }
+}
+@media only screen and (max-width: 900px) {
+    .imageHeight {
+        height: 30px;
+    }
+}
+/* small screen */
+@media only screen and (max-width: 768px){
+    li{
+        margin:3px 0;
+
+    }
+    .nav-link{
+        padding:10px
+    }
+    .collapse{
+        margin-top:5px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .imageHeight {
+        height: 40px;
+    }
+
+}
+
+/* medium screen */
+
+

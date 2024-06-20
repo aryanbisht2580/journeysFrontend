@@ -1,0 +1,21 @@
+.innerContain{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    transition: 1s ease-in-out;
+}
+.slideContainer{
+    margin:auto;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+.slides{
+    width:100%;
+    width:100%
+}

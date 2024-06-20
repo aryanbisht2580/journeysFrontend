@@ -1,0 +1,25 @@
+.fullCard{
+    border-right: 1px solid black;
+}
+.innercard{
+    min-height: 30vh;
+}
+.fullTotal{
+    margin-left: 5px;
+
+}
+@media only screen and (max-width:900px){
+    .fullCard{
+        width:100%;
+        border:none;
+    }
+    .innercard{
+        /* width:90%; */
+    }
+    .fullTotal{
+        margin:0;
+        width:100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,22 @@
+.mTop {
+    margin-top: 2%;
+}
+
+/* small screen */
+@media only screen and (max-width: 600px) {
+    .mTop {
+        margin-top: 20px;
+    }
+}
+
+/* medium screen */
+@media only screen and (max-width: 900px) {
+    .mTop {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .mTop {
+        margin-top: 5%;
+    }
+}

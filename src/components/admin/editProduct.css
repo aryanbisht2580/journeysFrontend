@@ -1,0 +1,53 @@
+.fullLength{
+    /* margin:0 */
+    width:40%;
+
+}
+.cardLength{
+    width: 27%;
+    height: 450px;
+    margin:20px
+}
+.imageContainer{
+    height:"65%"
+}
+@media only screen and (max-width:1200px){
+    .fullLength{
+        width:90%;
+        margin:0;
+        margin-bottom: 3px;
+    }
+    .cardLength{
+        margin-left:1px;
+        height:400px;
+    }
+}
+@media only screen and (max-width:900px){
+    .fullLength{
+        width:100%;
+        margin-bottom: 3px;
+    }
+    .cardLength{
+        width:42%
+    }
+}
+@media only screen and (max-width:600px){
+    .fullLength{
+        width:100%;
+        margin-bottom: 3px;
+    }
+    .cardLength{
+        height: 360px;
+    }
+    .imageContainer{
+        height:"50%";
+    }
+    .card-body{
+        font-size: 13px;
+    }
+}
+/* @media only screen and (max-width:500px){
+    .fullLength{
+       font-size: 0.7rem;
+    }
+} */

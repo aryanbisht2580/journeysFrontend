@@ -1,0 +1,17 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:20px
+}
+.center h1{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family:serif;
+}
+.form button{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border:none
+}

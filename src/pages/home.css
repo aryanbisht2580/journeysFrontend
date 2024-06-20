@@ -1,0 +1,41 @@
+.prodCard {
+    height: 450px;
+    width: 27%;   
+}
+.toggleShow{
+    display: none;
+}
+
+/* large screen */
+@media only screen and (max-width: 1200px) {
+    .prodCard {
+        height: 350px;
+        width: 27%;
+    }
+}
+
+/* medium screen */
+@media only screen and (max-width: 900px) {
+    .prodCard {
+        height: 320px;
+        width: 42%;
+        
+    }
+    .catShow{
+        display: none;
+    }
+    .toggleShow{
+        display: block;
+    }
+    .full{
+        width:100%;
+    }
+}
+
+/* small screen */
+@media only screen and (max-width: 600px) {
+    .prodCard {
+        height: 300px;
+        width: 40%;
+    }
+}
