@@ -41,7 +41,6 @@ const Home = () => {
     })
   }
   const filterProduct = (reset = false) => {
-
     fetch(`${process.env.REACT_APP_API}/api/product/getFilterProduct/${reset ? 1 : page}`, {
       method: "POST",
       headers: {
