@@ -23,6 +23,9 @@ const Home = () => {
   const [count, setCount] = useState();
   const [page, setPage] = useState(1);
   const searchKey = useSelector(searchSelecter);
+  const categoryRefs2 = useRef([]);
+  const brandRefs2 = useRef([]);
+  const priceRefs2 = useRef([]);
 
   const nav = useNavigate();
 
@@ -37,6 +40,15 @@ const Home = () => {
       e.checked = false
     })
     priceRefs.current.forEach((e) => {
+      e.checked = false
+    })
+    categoryRefs2.current.forEach((e) => {
+      e.checked = false
+    })
+    brandRefs2.current.forEach((e) => {
+      e.checked = false
+    })
+    priceRefs2.current.forEach((e) => {
       e.checked = false
     })
   }
@@ -219,7 +231,7 @@ const Home = () => {
                           return <div className="form-check form-check-inline d-flex justify-content-start">
                             <input className="form-check-input m-2" type="checkbox" id={`s${e._id}`} name="categoryFilter"
                               onChange={(x) => { handleCheck(x.target.checked, e._id) }}
-                              ref={(e) => categoryRefs.current[index] = e} />
+                              ref={(e) => categoryRefs2.current[index] = e} />
                             <label className="form-check-label" htmlFor={`s${e._id}`} >{e.name}</label>
                           </div>
                         })}
@@ -233,7 +245,7 @@ const Home = () => {
                         {brands.map((e, index) => {
                           return <div className="form-check form-check-inline d-flex justify-content-start">
                             <input className="form-check-input m-2" type="checkbox" id={`s${e._id}`} name="brandFilter"
-                              ref={(e) => brandRefs.current[index] = e}
+                              ref={(e) => brandRefs2.current[index] = e}
                               onChange={(x) => { handleCheckBrand(x.target.checked, e._id) }} />
                             <label className="form-check-label" htmlFor={`s${e._id}`} >{e._id}</label>
                           </div>
@@ -249,7 +261,7 @@ const Home = () => {
                         {pricesRanges.map((p, index) => {
                           return <div className="form-check form-check-inline d-flex justify-content-start">
                             <input className="form-check-input m-2" type="radio" id={`${p.name}`} name="priceFilter"
-                              ref={(e) => priceRefs.current[index] = e}
+                              ref={(e) => priceRefs2.current[index] = e}
                               onChange={() => setPriceRange(p.range)} />
                             <label className="form-check-label" htmlFor={`${p.name}`} >{p.name}</label>
                           </div>
