@@ -62,7 +62,27 @@ const Login = () => {
           </div>
           <button type="submit" className="btn btn-primary me-3">Submit</button>
           <NavLink to="/forgetPassEmail"><button className="btn">Forgot Password</button></NavLink>
-          
+          <div style={{marginTop:"10%",fontSize:12}}>
+            <h6>For testing:</h6>
+            <div style={{backgroundColor:"grey",color:"white",padding:2,borderRadius:20}} className="d-flex flex-column align-items-center">
+            <h5>
+              Admin:
+            </h5>
+            <div style={{marginLeft:30}} >
+              <p style={{margin:0}}>email : admin@gmail.com</p>
+              <p>password : admin1234</p>
+              
+            </div>
+            <h5>
+              User:
+            </h5>
+            <div style={{marginLeft:30}}>
+              <p style={{margin:0}}>email : user@gmail.com</p>
+              <p>password : user1234</p>
+              
+            </div>
+            </div>
+          </div>
         </form>
 
 
