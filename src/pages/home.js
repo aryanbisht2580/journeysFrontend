@@ -189,7 +189,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            Price:{count}
+            Price:
             <div className="p-3">
               <div className='d-flex flex-column'>
 
