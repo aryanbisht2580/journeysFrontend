@@ -50,7 +50,7 @@ const AdminOrders = () => {
                     <th>Total Amount</th>
                 </tr>
                 {orders.map((order, index) => {
-                    return <>
+                    return (order==null || order.buyer==null)?<></>:<>
                         <tr className='bg-dark text-light'>
                             <td className='p-4 '>{index + 1}</td>
                             <td><Select value={order.status} onChange={(value) => handleChange(order._id, value)} bordered={false} style={{ color: "white !important" }}>
