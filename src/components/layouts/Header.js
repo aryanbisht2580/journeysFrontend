@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import image from "./icons/logo.png"
+import image from "./icons/Journeys.png"
 import { useDispatch, useSelector } from 'react-redux'
 import { authActons, authSelector } from '../../redux/slices/authSlice'
 import toast from 'react-hot-toast'
@@ -151,7 +151,7 @@ function Header() {
     <nav className="navbar navbar-expand-md bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">    <Link to="/" className="navbar-brand" href="#">
-          <img src={image} alt='Logo' className='imageHeight' width="auto" ></img>
+          <img src={image} style={{borderRadius:10}} alt='Logo' className='imageHeight' width="auto" ></img>
         </Link></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />

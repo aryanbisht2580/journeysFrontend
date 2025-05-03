@@ -53,6 +53,7 @@ const Home = () => {
     })
   }
   const filterProduct = (reset = false) => {
+    console.log(process.env.REACT_APP_API);
     fetch(`${process.env.REACT_APP_API}/api/product/getFilterProduct/${reset ? 1 : page}`, {
       method: "POST",
       headers: {

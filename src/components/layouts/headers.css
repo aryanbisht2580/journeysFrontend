@@ -1,5 +1,6 @@
 .imageHeight {
-    height: 60px;
+    height: 50px;
+    padding:5px
 }
 @media only screen and (max-width: 1200px) {
     .imageHeight {
@@ -11,7 +12,7 @@
 }
 @media only screen and (max-width: 900px) {
     .imageHeight {
-        height: 30px;
+        height: 40px;
     }
 }
 /* small screen */
