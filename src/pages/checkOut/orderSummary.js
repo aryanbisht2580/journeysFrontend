@@ -20,6 +20,7 @@ const OrderSummary = () => {
     return sum;
   }
   useEffect(() => {
+    console.log(process.env.REACT_APP_RAZORPAY_KEY_ID);
     setAmt(total());
   }, [cart]);
   useEffect(()=>{
@@ -59,7 +60,7 @@ const OrderSummary = () => {
   }
   const handlePaymentVerify = async (data,neworderId) => {
     const options = {
-        key: process.env.RAZORPAY_KEY_ID,
+        key: process.env.REACT_APP_RAZORPAY_KEY_ID,
         amount: data.amount,
         currency: data.currency,
         name: "Journeys",

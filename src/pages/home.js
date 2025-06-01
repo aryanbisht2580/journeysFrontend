@@ -122,6 +122,7 @@ const Home = () => {
     filterProduct(true);
     getCat();
     getBrands();
+    console.log(process.env.REACT_APP_API);
   }, [])
   useEffect(() => {
 
